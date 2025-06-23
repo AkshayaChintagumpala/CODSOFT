@@ -369,26 +369,6 @@ h2 {
   text-decoration: underline;
   color: #4b3b57;
 }
-.project-button {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.6rem 1.2rem;
-  background: linear-gradient(135deg, #a394b7, #7e6a9c);
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 30px;
-  box-shadow: 0 4px 12px rgba(108, 91, 123, 0.3);
-  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-}
-
-.project-button:hover {
-  background: linear-gradient(135deg, #7e6a9c, #a394b7); 
-  color:white;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(108, 91, 123, 0.5);
-}
 
 .resume {
   background-color: #f4f0fa;
