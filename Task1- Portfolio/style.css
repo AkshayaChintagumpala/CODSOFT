@@ -74,11 +74,6 @@ p {
   color: #a394b7;
 }
 
-
-
-
-
-/* Cover Intro Section - Hero Banner */
 .cover-intro {
   height: 50vh;
   display: flex;
@@ -88,27 +83,22 @@ p {
   text-align: center;
   box-sizing: border-box;
   padding: 10vh 20px 0 20px;
-
-  /* Lavender gradient background */
   background: linear-gradient(to right, #4b3b57, #a394b7);
   color: white;
 }
 
-/* Main heading */
 .cover-intro h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
   color: white;
 }
 
-/* Subheading/intro paragraph */
 .cover-intro .intro {
   font-size: 1.5rem;
   max-width: 600px;
   color: white;
 }
 
-/* Optional: Responsive font scaling */
 @media (max-width: 600px) {
   .cover-intro h1 {
     font-size: 2.2rem;
@@ -119,9 +109,6 @@ p {
   }
 }
 
-
-
-/* General Section Styling */
 section {
   padding: 2rem;
   background: transparent;
@@ -129,13 +116,11 @@ section {
   border-radius: 0px;
 }
 
-/* Headings */
 h2 {
   color: black;
   margin-bottom: 1rem;
 }
 
-/* About Section */
 .about {
   width: 100%;
   background-color: #f4f0fa;
@@ -156,7 +141,6 @@ h2 {
   padding: 0 1rem
 }
 
-/* About Text */
 .about-text {
   flex: 1.5;
 }
@@ -173,7 +157,6 @@ h2 {
   color: #444;
 }
 
-/* About Image Styles */
 .about-image {
   flex: 1;
   max-width: 400px;
@@ -224,8 +207,6 @@ h2 {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
-
-/* Responsive */
 @media (max-width: 768px) {
   .about-inner {
     flex-direction: column;
@@ -238,14 +219,8 @@ h2 {
   }
 }
 
-
-
-
-
-
-/* Skills Section */
 .skills {
-  font-family: inherit;  /* Use the same font as the rest of the site */
+  font-family: inherit; 
   color: #222;
   text-align: center;
   margin-bottom: 0rem;
@@ -261,7 +236,6 @@ h2 {
   color: #4b3b57;
 }
 
-/* Skills text */
 .skills ul {
   list-style: none;
   padding: 0;
@@ -274,8 +248,8 @@ h2 {
 }
 
 .skills li {
-  position: relative;            /* for ::before positioning */
-  background-color: #f3e8ff;     /* light lavender */
+  position: relative;            
+  background-color: #f3e8ff;  
   color: #4b3b57;
   padding: 1.2rem;
   width: 135px;
@@ -289,7 +263,7 @@ h2 {
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease;
-  overflow: hidden;             /* hide overflow of ::before */
+  overflow: hidden;         
 }
 
 .skills li::before {
@@ -299,7 +273,7 @@ h2 {
   left: 50%;
   width: 80%;
   height: 80%;
-  background: rgba(75, 59, 87, 0.1);  /* semi-transparent dark lavender */
+  background: rgba(75, 59, 87, 0.1); 
   transform: translateX(-50%) rotate(45deg);
   border-radius: 8px;
   pointer-events: none;
@@ -313,13 +287,8 @@ h2 {
 
 .skills li > * {
   position: relative;
-  z-index: 1; /* to stay above ::before overlay */
+  z-index: 1; 
 }
-
-
-
-
-/* Projects text */
 
 .projects {
   font-family: inherit;
@@ -336,7 +305,6 @@ h2 {
   color: #4b3b57;
 }
 
-/* Paragraph under project cards */
 .projects p {
   font-size: 1.2rem;
   line-height: 1.6;
@@ -345,7 +313,6 @@ h2 {
   margin: 0 auto 1rem;
 }
 
-/* Project Cards */
 .projects .project {
   margin: 1rem 0.70rem 2rem;
   display: inline-block;
@@ -355,7 +322,7 @@ h2 {
   vertical-align: top;
   font-size: 1.3rem;
   color: #222;
-  background-color: #e6e0f7; /* soft lavender background */
+  background-color: #e6e0f7; 
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   padding: 1rem;
@@ -366,7 +333,6 @@ h2 {
   transform: translateY(-5px);
 }
 
-/* Project Titles */
 .projects .project h3 {
   margin: 0.5rem 0;
   font-size: 1.5rem;
@@ -374,17 +340,16 @@ h2 {
 }
 
 .projects .project img {
-  width: 120px;            /* fixed width */
-  height: 120px;           /* fixed height to match icon size */
-  object-fit: cover;       /* crop if needed to fill size without distortion */
-  border-radius: 12px;     /* keep your rounded corners */
+  width: 120px;     
+  height: 120px;      
+  object-fit: cover;      
+  border-radius: 12px;  
   margin-bottom: 0.8rem;
-  display: block;          /* centers better in block containers */
+  display: block;         
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Icon styles for projects */
 .project-icon {
   font-size: 3.5rem;
   color: #4b3b57;
@@ -392,7 +357,6 @@ h2 {
   display: block;
 }
 
-/* Project Links */
 .projects .project a {
   display: inline-block;
   margin-top: 0.5rem;
@@ -409,7 +373,7 @@ h2 {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
-  background: linear-gradient(135deg, #a394b7, #7e6a9c); /* soft gradient */
+  background: linear-gradient(135deg, #a394b7, #7e6a9c);
   color: #fff;
   font-size: 1rem;
   font-weight: 600;
@@ -420,21 +384,18 @@ h2 {
 }
 
 .project-button:hover {
-  background: linear-gradient(135deg, #7e6a9c, #a394b7); /* reverse on hover */
+  background: linear-gradient(135deg, #7e6a9c, #a394b7); 
   color:white;
   transform: translateY(-3px);
   box-shadow: 0 6px 18px rgba(108, 91, 123, 0.5);
 }
 
-
-
-/* Resume text */
 .resume {
   background-color: #f4f0fa;
   text-align: center;
   padding: 2rem 1rem;
   color: #222;
-  font-size: 1.2rem;     /* same as about-text paragraph */
+  font-size: 1.2rem; 
   line-height: 1.6;
   font-family: inherit;
 }
@@ -457,7 +418,6 @@ h2 {
   text-decoration: none;
   box-shadow: 0 4px 12px rgba(108, 91, 123, 0.4);
 transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
-
 }
 
 .resume a:hover {
@@ -467,10 +427,6 @@ transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s eas
   text-decoration: none;
   color: white;
 }
-
-
-
-/* Contact Section */
 
 .contact {
   width: 100%;
@@ -494,10 +450,9 @@ transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s eas
   text-align: center;
   margin-bottom: 2rem;
   font-size: 1.2rem;
-  color: #4b3b57; /* matches your heading color */
+  color: #4b3b57; 
 }
 
-/* Contact Form Container */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -505,43 +460,39 @@ transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s eas
   gap: 1.6rem;
 }
 
-/* Inputs and Textarea */
 .contact-form input,
 .contact-form textarea {
   width: 100%;
   max-width: 500px;
   padding: 0.9rem 1.2rem;
-  border: 1.5px solid #bcaecb; /* soft lavender-gray */
+  border: 1.5px solid #bcaecb; 
   border-radius: 8px;
   font-size: 1rem;
   font-family: inherit;
   resize: vertical;
   color: #4b3b57;
-  background-color: #f5f0fa; /* very light lavender */
+  background-color: #f5f0fa; 
   box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Placeholder Styling */
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-  color: #9985a5; /* muted lavender */
+  color: #9985a5; 
   font-style: italic;
   opacity: 0.9;
 }
 
-/* Focus Styling */
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #a088c4; /* medium lavender */
+  border-color: #a088c4; 
   background-color: #fff;
   box-shadow: 0 0 8px rgba(160, 136, 196, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.05);
   outline: none;
 }
 
-/* Submit Button */
 .contact-form button {
-  background: #4b3b57; /* dark lavender theme */
+  background: #4b3b57;
   color: white;
   padding: 0.75rem 1.5rem;
   border: none;
@@ -554,15 +505,12 @@ transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s eas
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover State */
 .contact-form button:hover {
-  background: #6c5a7d; /* slightly lighter purple */
+  background: #6c5a7d; 
   box-shadow: 0 8px 20px rgba(108, 90, 125, 0.5);
   color: #fff;
 }
 
-
-/* Ensure consistent vertical spacing for all main sections */
 .about,
 .skills,
 .projects,
@@ -570,32 +518,26 @@ transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s eas
 .contact {
   padding-top: 60px;
   padding-bottom: 60px;
-  scroll-margin-top: 80px; /* for smooth scrolling with fixed navbar */
+  scroll-margin-top: 80px; 
 }
 
-
-
-
-/* Footer base */
 footer {
   font-family: Arial, sans-serif;
   text-align: center;
   margin: 0;
   padding: 0;
-  background-color: #4b3b57; /* Deep lavender to mirror the intro gradient */
+  background-color: #4b3b57; 
   color: #f5f0fa;
 }
 
-/* Social Links Section */
 .social-links-section {
-  background-color: #4b3b57; /* Deep lavender */
+  background-color: #4b3b57;
   padding: 1.5rem 0;
   text-align: center;
 }
 
-/* Social Link Styles */
 .social-links-section a {
-  color: #f4f0fa; /* Soft light lavender */
+  color: #f4f0fa;
   text-decoration: none;
   margin: 0 0.7rem;
   font-size: 1.1rem;
@@ -606,30 +548,26 @@ footer {
 }
 
 .social-links-section a:hover {
-  color: #cbb6e4; /* A soft hover lavender to match overall palette */
+  color: #cbb6e4; 
 }
 
-/* Icon Styling */
 .social-links-section i {
   margin-right: 6px;
   vertical-align: middle;
   font-size: 1.2rem;
 }
 
-/* Optional footer message */
 footer p {
   margin-top: 1rem;
   font-size: 0.9rem;
-  color: #e0d6ef; /* Slightly lighter subtext */
+  color: #e0d6ef; 
 }
 
-/* Copyright Section */
 .copyright-section {
-  background-color: #3a2e41; /* Even darker tone for elegant contrast */
+  background-color: #3a2e41; 
   padding: 1rem 0;
   color: #f4f0fa;
   font-size: 0.9rem;
   font-style: italic;
-  border-top: 1px solid rgba(255, 255, 255, 0.1); /* soft divider */
+  border-top: 1px solid rgba(255, 255, 255, 0.1); 
 }
-

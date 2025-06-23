@@ -1,7 +1,6 @@
 const expressionDisplay = document.getElementById('expression');
 const resultDisplay = document.getElementById('display');
 const buttons = document.querySelectorAll('.btn');
-
 let currentInput = '';
 let resultDisplayed = false;
 
